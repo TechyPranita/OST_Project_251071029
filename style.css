@@ -1,0 +1,156 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #faf7f2;
+  color: #39332f;
+  line-height: 1.6;
+}
+
+header {
+  background: #453b35;
+  color: white;
+  text-align: center;
+  padding: 28px 15px;
+}
+
+header h1 {
+  font-size: 38px;
+  letter-spacing: 2px;
+}
+
+header h1 span {
+  color: #e6b99b;
+}
+
+header p {
+  color: #e9ddd4;
+}
+
+main {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.intro h2 {
+  font-size: 27px;
+  margin-bottom: 8px;
+}
+
+.panel, .wardrobe {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  margin-bottom: 25px;
+  box-shadow: 0 3px 14px #0000000c;
+}
+
+.panel h2, .wardrobe h2 {
+  margin-bottom: 15px;
+}
+
+form, .outfit-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+input, select {
+  padding: 12px;
+  border: 1px solid #d9cec5;
+  border-radius: 7px;
+  font-size: 14px;
+  background: white;
+  flex: 1;
+  min-width: 140px;
+}
+
+button {
+  background: #806451;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  padding: 12px 18px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background: #5f493b;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.clothes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 15px;
+  margin-top: 18px;
+}
+
+.clothing-card {
+  background: #f7f0e9;
+  padding: 18px;
+  border-radius: 10px;
+  border: 1px solid #eaded3;
+}
+
+.clothing-card h3 {
+  margin-bottom: 5px;
+}
+
+.clothing-card p {
+  color: #76685f;
+  font-size: 14px;
+}
+
+.delete-btn {
+  margin-top: 12px;
+  background: #a65c55;
+}
+
+.outfit-result {
+  margin-top: 18px;
+  padding: 15px;
+  border-radius: 9px;
+  background: #f7f0e9;
+}
+
+.empty-message {
+  color: #81756d;
+  padding: 15px 0;
+}
+
+footer {
+  text-align: center;
+  padding: 22px;
+  color: #76685f;
+}
+
+@media (max-width: 600px) {
+  .intro h2 {
+    font-size: 22px;
+  }
+
+  .panel, .wardrobe {
+    padding: 18px;
+  }
+}
