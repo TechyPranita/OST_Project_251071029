@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outfitly | Your Digital Wardrobe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>outfitly<span>.</span></h1>
+    <p>Your wardrobe, your style.</p>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Welcome to your digital closet 👗</h2>
+      <p>Organize your clothes and create outfits for every day.</p>
+    </section>
+
+    <section class="panel">
+      <h2>Add a clothing item</h2>
+      <form id="clothesForm">
+        <input id="itemName" type="text" placeholder="Clothing name" required>
+        <select id="category" required>
+          <option value="">Choose category</option>
+          <option value="Tops">Tops</option>
+          <option value="Bottoms">Bottoms</option>
+          <option value="Shoes">Shoes</option>
+          <option value="Accessories">Accessories</option>
+        </select>
+        <input id="color" type="text" placeholder="Colour" required>
+        <button type="submit">Add to wardrobe</button>
+      </form>
+    </section>
+
+    <section class="wardrobe">
+      <div class="section-heading">
+        <h2>My Wardrobe</h2>
+        <select id="filter">
+          <option value="All">All items</option>
+          <option value="Tops">Tops</option>
+          <option value="Bottoms">Bottoms</option>
+          <option value="Shoes">Shoes</option>
+          <option value="Accessories">Accessories</option>
+        </select>
+      </div>
+      <div id="clothesList" class="clothes-grid"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Create an outfit ✨</h2>
+      <p>Choose items from your wardrobe to put together a look.</p>
+      <div class="outfit-form">
+        <select id="topChoice"><option value="">Choose a top</option></select>
+        <select id="bottomChoice"><option value="">Choose a bottom</option></select>
+        <select id="shoeChoice"><option value="">Choose shoes</option></select>
+        <button id="createOutfit">Create my outfit</button>
+      </div>
+      <div id="outfitResult" class="outfit-result"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with style and creativity · Outfitly © 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
